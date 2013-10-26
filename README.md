@@ -11,8 +11,7 @@ It has been deployed on two platforms:
 For Windows, you need the JavaScriptCore library as a DLL. I've compiled one from the WebKit sources, but it's a few years behind the latest WebKit. If you'd like to get it anyway, please send me an email at pauli <at> lacquer <dot> fi
   
 
-License and acknowledgements
-============================  
+# License and acknowledgements
 
 LacqJS is based on _JSKit_ created by Glenn Andreas. The code was forked in 2008.
 
