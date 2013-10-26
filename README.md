@@ -5,13 +5,13 @@ LacqJS is a framework that provides an Objective-C API for JavaScriptCore bindin
 
 It has been deployed on two platforms:
 
-  * Mac OS X 10.4+  
+  * Mac OS X 10.4 - 10.9
   * Windows using the Cocotron framework and its cross-compiler for XCode
   
-For Windows, you need the JavaScriptCore library as a DLL. I've compiled one from the WebKit sources, but it's a few years behind the latest WebKit. If you'd like to get it anyway, please send me an email at pauli <at> lacquer <dot> fi
+For Windows, you need the JavaScriptCore library as a DLL. I've compiled one from the WebKit sources, but it's a few years behind the latest WebKit. If you'd like to get it anyway, please send me an email at pauli (at) lacquer (d o t) fi
   
 
-# License and acknowledgements
+## License and acknowledgements
 
 LacqJS is based on _JSKit_ created by Glenn Andreas. The code was forked in 2008.
 
@@ -21,6 +21,7 @@ The license follows:
 ----
 
 Copyright (C) 2008-13 Lacquer oy/ltd.
+
 Copyright (C) 2008 gandreas software. 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
