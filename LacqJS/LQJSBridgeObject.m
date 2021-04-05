@@ -72,7 +72,7 @@ static NSString *LQJSKitBridgeCopyFunctionName(JSContextRef ctx, JSObjectRef fun
         if (_owner)
             JSValueProtect(_jsContext, _jsObject);
     
-        ///NSLog(@"js bridge init: %@ (obj %p, ctx %p; owner is %@)", self, _jsObject, _jsContext, _owner);
+        //NSLog(@"js bridge init: %@ (obj %p, ctx %p; owner is %@)", self, _jsObject, _jsContext, _owner);
     }
     return self;
 }
@@ -568,7 +568,7 @@ static NSLock *g_classRefLock = nil;
     }
     
     // and the other callbacks
-    classDef.convertToType = (JSObjectConvertToTypeCallback)LQJSKitNSObjectConvertToTypeCallback;
+    classDef.convertToType = LQJSKitNSObjectConvertToTypeCallback;
     classDef.finalize = LQJSKitNSObjectFinalizeCallback;
 //    classDef.callAsConstructor = LQJSKitBridgeConstructor;
     

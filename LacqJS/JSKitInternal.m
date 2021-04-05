@@ -53,17 +53,26 @@ void LQJSKitNSObjectFinalizeCallback (JSObjectRef object)
 JSValueRef LQJSKitNSObjectConvertToTypeCallback(JSContextRef ctx, JSObjectRef object, JSType type, JSValueRef* exception)
 {
     id nsobj = JSObjectGetPrivate(object);
+    //NSLog(@"%s, obj %p, type %ld, nsobj class %@", __func__, object, (long)type, [nsobj class]);
     switch (type) {
 	case kJSTypeUndefined:
 	    return JSValueMakeUndefined(ctx);
 	case kJSTypeNull:
 	    return JSValueMakeNull(ctx);
 	case kJSTypeBoolean:
-	    return JSValueMakeBoolean(ctx, [nsobj jskitAsBoolean]);
+            if ([nsobj respondsToSelector:@selector(jskitAsBoolean)]) {
+                return JSValueMakeBoolean(ctx, [nsobj jskitAsBoolean]);
+            } else {
+                return NULL;
+            }
 	case kJSTypeNumber:
-	    return JSValueMakeBoolean(ctx, [nsobj jskitAsNumber]);
+            if ([nsobj respondsToSelector:@selector(jskitAsNumber)]) {
+                return JSValueMakeNumber(ctx, [nsobj jskitAsNumber]);
+            } else {
+                return NULL;
+            }
 	case kJSTypeString: {
-        //NSLog(@"convert to js string: %p / %@, strlen %i", nsobj, [nsobj class], [[nsobj jskitAsString] length]);
+        //NSLog(@"convert to js string: %p / %@, strlen %ld", nsobj, [nsobj class], (long)[[nsobj jskitAsString] length]);
         NSString *str = [nsobj jskitAsString];
         if ( !str) str = [[nsobj class] description];
 	    JSStringRef string = JSStringCreateWithCFString((CFStringRef)str);

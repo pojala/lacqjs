@@ -87,14 +87,10 @@ NSLock *g_jsLock = nil;
     
     if ( !g_jsLock) {
         g_jsLock = (NSLock *)[[NSRecursiveLock alloc] init];
-#ifdef __APPLE__
         if ([g_jsLock respondsToSelector:@selector(setName:)]) {
-            // -setName: has multiple definitions, the typecast below matches NSLock's method in 10.5+
-            [(NSNameSpecifier *)g_jsLock setName:@"LQJSContainerSharedLock"];
+            [g_jsLock setName:@"LQJSContainerSharedLock"];
         }
-#endif
     }
-
     
     ENTERCONTEXTLOCK
     _jsInterp = [[LQJSInterpreter alloc] init];

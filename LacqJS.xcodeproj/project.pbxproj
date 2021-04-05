@@ -6,35 +6,76 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5AD36A8C1901A94B00A25553 /* UniversalLib-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5AD36A8D1901A94B00A25553 /* Build configuration list for PBXAggregateTarget "UniversalLib-iOS" */;
+			buildPhases = (
+				5AD36A901901A95900A25553 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "UniversalLib-iOS";
+			productName = "UniversalLib-iOS";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		5A2A7C12181AF53A004D38E7 /* LacqJS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C06181AF53A004D38E7 /* LacqJS.h */; };
-		5A2A7C14181AF53A004D38E7 /* LacqJSInit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C08181AF53A004D38E7 /* LacqJSInit.h */; };
+		5A2A7C12181AF53A004D38E7 /* LacqJS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C06181AF53A004D38E7 /* LacqJS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A2A7C14181AF53A004D38E7 /* LacqJSInit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C08181AF53A004D38E7 /* LacqJSInit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A2A7C15181AF53A004D38E7 /* LacqJSInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C09181AF53A004D38E7 /* LacqJSInit.m */; };
-		5A2A7C16181AF53A004D38E7 /* LacqJSExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C0A181AF53A004D38E7 /* LacqJSExport.h */; };
-		5A2A7C17181AF53A004D38E7 /* LQScriptBridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C0B181AF53A004D38E7 /* LQScriptBridging.h */; };
-		5A2A7C18181AF53A004D38E7 /* LQJSBridgeObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C0C181AF53A004D38E7 /* LQJSBridgeObject.h */; };
+		5A2A7C16181AF53A004D38E7 /* LacqJSExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C0A181AF53A004D38E7 /* LacqJSExport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A2A7C17181AF53A004D38E7 /* LQScriptBridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C0B181AF53A004D38E7 /* LQScriptBridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A2A7C18181AF53A004D38E7 /* LQJSBridgeObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C0C181AF53A004D38E7 /* LQJSBridgeObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A2A7C19181AF53A004D38E7 /* LQJSBridgeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C0D181AF53A004D38E7 /* LQJSBridgeObject.m */; };
-		5A2A7C1A181AF53A004D38E7 /* LQJSInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C0E181AF53A004D38E7 /* LQJSInterpreter.h */; };
+		5A2A7C1A181AF53A004D38E7 /* LQJSInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C0E181AF53A004D38E7 /* LQJSInterpreter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A2A7C1B181AF53A004D38E7 /* LQJSInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C0F181AF53A004D38E7 /* LQJSInterpreter.m */; };
-		5A2A7C1C181AF53A004D38E7 /* LQJSContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C10181AF53A004D38E7 /* LQJSContainer.h */; };
+		5A2A7C1C181AF53A004D38E7 /* LQJSContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C10181AF53A004D38E7 /* LQJSContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A2A7C1D181AF53A004D38E7 /* LQJSContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C11181AF53A004D38E7 /* LQJSContainer.m */; };
-		5A2A7C2C181AF587004D38E7 /* JSKitTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C1F181AF586004D38E7 /* JSKitTypes.h */; };
+		5A2A7C2C181AF587004D38E7 /* JSKitTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C1F181AF586004D38E7 /* JSKitTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A2A7C2D181AF587004D38E7 /* JSKitInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C20181AF586004D38E7 /* JSKitInternal.h */; };
 		5A2A7C2E181AF587004D38E7 /* JSKitInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C21181AF587004D38E7 /* JSKitInternal.m */; };
-		5A2A7C2F181AF587004D38E7 /* JSKitException.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C22181AF587004D38E7 /* JSKitException.h */; };
+		5A2A7C2F181AF587004D38E7 /* JSKitException.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C22181AF587004D38E7 /* JSKitException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A2A7C30181AF587004D38E7 /* JSKitException.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C23181AF587004D38E7 /* JSKitException.m */; };
-		5A2A7C31181AF587004D38E7 /* JSKitWrappers.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C24181AF587004D38E7 /* JSKitWrappers.h */; };
+		5A2A7C31181AF587004D38E7 /* JSKitWrappers.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C24181AF587004D38E7 /* JSKitWrappers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A2A7C32181AF587004D38E7 /* JSKitWrappers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C25181AF587004D38E7 /* JSKitWrappers.m */; };
-		5A2A7C33181AF587004D38E7 /* JSKitObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C26181AF587004D38E7 /* JSKitObject.h */; };
+		5A2A7C33181AF587004D38E7 /* JSKitObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C26181AF587004D38E7 /* JSKitObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A2A7C34181AF587004D38E7 /* JSKitObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C27181AF587004D38E7 /* JSKitObject.m */; };
-		5A2A7C35181AF587004D38E7 /* JSKitInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C28181AF587004D38E7 /* JSKitInterpreter.h */; };
+		5A2A7C35181AF587004D38E7 /* JSKitInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C28181AF587004D38E7 /* JSKitInterpreter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A2A7C36181AF587004D38E7 /* JSKitInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C29181AF587004D38E7 /* JSKitInterpreter.m */; };
-		5A2A7C37181AF587004D38E7 /* JSKitInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C2A181AF587004D38E7 /* JSKitInvocation.h */; };
+		5A2A7C37181AF587004D38E7 /* JSKitInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2A7C2A181AF587004D38E7 /* JSKitInvocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A2A7C38181AF587004D38E7 /* JSKitInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C2B181AF587004D38E7 /* JSKitInvocation.m */; };
 		5A2A7C3A181AF5A2004D38E7 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2A7C39181AF5A2004D38E7 /* JavaScriptCore.framework */; };
 		5A2A7C3D181C0815004D38E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A45475D181AE643002FC515 /* Foundation.framework */; };
 		5A454765181AE643002FC515 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A454763181AE643002FC515 /* InfoPlist.strings */; };
+		5AD36A5D1901A81000A25553 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A45475D181AE643002FC515 /* Foundation.framework */; };
+		5AD36A621901A81000A25553 /* LacqJS_iOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5AD36A611901A81000A25553 /* LacqJS_iOS.h */; };
+		5AD36A641901A81000A25553 /* LacqJS_iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD36A631901A81000A25553 /* LacqJS_iOS.m */; };
+		5AD36A801901A84300A25553 /* LQJSBridgeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C0D181AF53A004D38E7 /* LQJSBridgeObject.m */; };
+		5AD36A811901A84300A25553 /* LQJSInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C0F181AF53A004D38E7 /* LQJSInterpreter.m */; };
+		5AD36A821901A84300A25553 /* LQJSContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C11181AF53A004D38E7 /* LQJSContainer.m */; };
+		5AD36A831901A84300A25553 /* JSKitInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C21181AF587004D38E7 /* JSKitInternal.m */; };
+		5AD36A841901A84300A25553 /* JSKitException.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C23181AF587004D38E7 /* JSKitException.m */; };
+		5AD36A851901A84300A25553 /* JSKitWrappers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C25181AF587004D38E7 /* JSKitWrappers.m */; };
+		5AD36A861901A84300A25553 /* JSKitObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C27181AF587004D38E7 /* JSKitObject.m */; };
+		5AD36A871901A84300A25553 /* JSKitInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C29181AF587004D38E7 /* JSKitInterpreter.m */; };
+		5AD36A881901A84300A25553 /* JSKitInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C2B181AF587004D38E7 /* JSKitInvocation.m */; };
+		5AD36A891901A84300A25553 /* LacqJSInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A7C09181AF53A004D38E7 /* LacqJSInit.m */; };
+		5AD36A8B1901A86000A25553 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD36A8A1901A86000A25553 /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5AD36A5A1901A80F00A25553 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				5AD36A621901A81000A25553 /* LacqJS_iOS.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5A2A7C06181AF53A004D38E7 /* LacqJS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LacqJS.h; sourceTree = "<group>"; };
@@ -70,6 +111,16 @@
 		5A454762181AE643002FC515 /* LacqJS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LacqJS-Info.plist"; sourceTree = "<group>"; };
 		5A454764181AE643002FC515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A454766181AE643002FC515 /* LacqJS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LacqJS-Prefix.pch"; sourceTree = "<group>"; };
+		5AD36A5C1901A80F00A25553 /* libLacqJS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLacqJS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD36A601901A81000A25553 /* LacqJS-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LacqJS-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		5AD36A611901A81000A25553 /* LacqJS_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LacqJS_iOS.h; sourceTree = "<group>"; };
+		5AD36A631901A81000A25553 /* LacqJS_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LacqJS_iOS.m; sourceTree = "<group>"; };
+		5AD36A6A1901A81000A25553 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5AD36A6D1901A81000A25553 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5AD36A741901A81000A25553 /* LacqJS-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LacqJS-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		5AD36A761901A81000A25553 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5AD36A781901A81000A25553 /* LacqJS_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LacqJS_iOSTests.m; sourceTree = "<group>"; };
+		5AD36A8A1901A86000A25553 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +130,15 @@
 			files = (
 				5A2A7C3A181AF5A2004D38E7 /* JavaScriptCore.framework in Frameworks */,
 				5A2A7C3D181C0815004D38E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AD36A591901A80F00A25553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD36A8B1901A86000A25553 /* JavaScriptCore.framework in Frameworks */,
+				5AD36A5D1901A81000A25553 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				5A454760181AE643002FC515 /* LacqJS */,
+				5AD36A5E1901A81000A25553 /* LacqJS-iOS */,
+				5AD36A721901A81000A25553 /* LacqJS-iOSTests */,
 				5A454759181AE643002FC515 /* Frameworks */,
 				5A454758181AE643002FC515 /* Products */,
 			);
@@ -106,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				5A454757181AE643002FC515 /* LacqJS.framework */,
+				5AD36A5C1901A80F00A25553 /* libLacqJS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,8 +176,11 @@
 		5A454759181AE643002FC515 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5AD36A8A1901A86000A25553 /* JavaScriptCore.framework */,
 				5A45475D181AE643002FC515 /* Foundation.framework */,
 				5A2A7C39181AF5A2004D38E7 /* JavaScriptCore.framework */,
+				5AD36A6A1901A81000A25553 /* XCTest.framework */,
+				5AD36A6D1901A81000A25553 /* UIKit.framework */,
 				5A45475C181AE643002FC515 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -172,6 +238,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5AD36A5E1901A81000A25553 /* LacqJS-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5AD36A611901A81000A25553 /* LacqJS_iOS.h */,
+				5AD36A631901A81000A25553 /* LacqJS_iOS.m */,
+				5AD36A5F1901A81000A25553 /* Supporting Files */,
+			);
+			path = "LacqJS-iOS";
+			sourceTree = "<group>";
+		};
+		5AD36A5F1901A81000A25553 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AD36A601901A81000A25553 /* LacqJS-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AD36A721901A81000A25553 /* LacqJS-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AD36A781901A81000A25553 /* LacqJS_iOSTests.m */,
+				5AD36A731901A81000A25553 /* Supporting Files */,
+			);
+			path = "LacqJS-iOSTests";
+			sourceTree = "<group>";
+		};
+		5AD36A731901A81000A25553 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AD36A741901A81000A25553 /* LacqJS-iOSTests-Info.plist */,
+				5AD36A751901A81000A25553 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -217,13 +319,30 @@
 			productReference = 5A454757181AE643002FC515 /* LacqJS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5AD36A5B1901A80F00A25553 /* LacqJS-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AD36A7E1901A81000A25553 /* Build configuration list for PBXNativeTarget "LacqJS-iOS" */;
+			buildPhases = (
+				5AD36A581901A80F00A25553 /* Sources */,
+				5AD36A591901A80F00A25553 /* Frameworks */,
+				5AD36A5A1901A80F00A25553 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LacqJS-iOS";
+			productName = "LacqJS-iOS";
+			productReference = 5AD36A5C1901A80F00A25553 /* libLacqJS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5A45474E181AE643002FC515 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Lacquer oy/ltd";
 			};
 			buildConfigurationList = 5A454751181AE643002FC515 /* Build configuration list for PBXProject "LacqJS" */;
@@ -239,6 +358,8 @@
 			projectRoot = "";
 			targets = (
 				5A454756181AE643002FC515 /* LacqJS */,
+				5AD36A5B1901A80F00A25553 /* LacqJS-iOS */,
+				5AD36A8C1901A94B00A25553 /* UniversalLib-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +374,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AD36A901901A95900A25553 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\nPROJECT_NAME=LacqJS\nTARGET_NAME=LacqJS-iOS\nPRODUCT_NAME=libLacqJS.a\n\n# build Device and Simulator versions\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -target ${TARGET_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -target ${TARGET_NAME} -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# ensure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PRODUCT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PRODUCT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PRODUCT_NAME}\"\n\n# copy header files\n#cp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A454752181AE643002FC515 /* Sources */ = {
@@ -272,6 +409,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5AD36A581901A80F00A25553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD36A851901A84300A25553 /* JSKitWrappers.m in Sources */,
+				5AD36A871901A84300A25553 /* JSKitInterpreter.m in Sources */,
+				5AD36A641901A81000A25553 /* LacqJS_iOS.m in Sources */,
+				5AD36A881901A84300A25553 /* JSKitInvocation.m in Sources */,
+				5AD36A891901A84300A25553 /* LacqJSInit.m in Sources */,
+				5AD36A801901A84300A25553 /* LQJSBridgeObject.m in Sources */,
+				5AD36A831901A84300A25553 /* JSKitInternal.m in Sources */,
+				5AD36A861901A84300A25553 /* JSKitObject.m in Sources */,
+				5AD36A811901A84300A25553 /* LQJSInterpreter.m in Sources */,
+				5AD36A821901A84300A25553 /* LQJSContainer.m in Sources */,
+				5AD36A841901A84300A25553 /* JSKitException.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -279,6 +434,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				5A454764181AE643002FC515 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5AD36A751901A81000A25553 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AD36A761901A81000A25553 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -357,6 +520,7 @@
 		5A454780181AE643002FC515 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -369,8 +533,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LacqJS/LacqJS-Prefix.pch";
 				INFOPLIST_FILE = "LacqJS/LacqJS-Info.plist";
+				INSTALL_PATH = "@rpath";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYMROOT = "$(HOME)/build/lx";
+				SYMROOT = "$(PROJECT_DIR)/../build";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -378,6 +543,7 @@
 		5A454781181AE643002FC515 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -390,9 +556,63 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LacqJS/LacqJS-Prefix.pch";
 				INFOPLIST_FILE = "LacqJS/LacqJS-Info.plist";
+				INSTALL_PATH = "@rpath";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYMROOT = "$(HOME)/build/lx";
+				SYMROOT = "$(PROJECT_DIR)/../build";
 				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		5AD36A7A1901A81000A25553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/LacqJS_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LacqJS-iOS/LacqJS-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = LacqJS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5AD36A7B1901A81000A25553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/LacqJS_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LacqJS-iOS/LacqJS-iOS-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = LacqJS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AD36A8E1901A94B00A25553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5AD36A8F1901A94B00A25553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -416,6 +636,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5AD36A7E1901A81000A25553 /* Build configuration list for PBXNativeTarget "LacqJS-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AD36A7A1901A81000A25553 /* Debug */,
+				5AD36A7B1901A81000A25553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5AD36A8D1901A94B00A25553 /* Build configuration list for PBXAggregateTarget "UniversalLib-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AD36A8E1901A94B00A25553 /* Debug */,
+				5AD36A8F1901A94B00A25553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

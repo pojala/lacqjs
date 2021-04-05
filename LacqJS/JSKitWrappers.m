@@ -80,7 +80,8 @@ void LQJSKitWrappers_initStatics()
         kvobjectBridgeClassDef.getProperty = LQJSKitNSObjectGetPropertyCallback;
         kvobjectBridgeClassDef.getPropertyNames = LQJSKitNSObjectGetPropertyNamesCallback;
         kvobjectBridgeClassDef.finalize = LQJSKitNSObjectFinalizeCallback;
-        kvobjectBridgeClassDef.convertToType = (JSObjectConvertToTypeCallback)LQJSKitNSObjectConvertToTypeCallback;
+        kvobjectBridgeClassDef.convertToType = LQJSKitNSObjectConvertToTypeCallback;
+        
         s_kvobjectClassRef = JSClassCreate(&kvobjectBridgeClassDef);
         JSClassRetain(s_kvobjectClassRef);
     }
@@ -173,6 +174,7 @@ void LQJSKitNSObjectGetPropertyNamesCallback (JSContextRef ctx, JSObjectRef obje
 {
     return [self description];
 }
+/*
 - (BOOL) jskitAsBoolean
 {
     return YES;
@@ -181,6 +183,7 @@ void LQJSKitNSObjectGetPropertyNamesCallback (JSContextRef ctx, JSObjectRef obje
 {
     return 0;
 }
+ */
 - (NSString *) jskitAsString
 {
     return [self description];

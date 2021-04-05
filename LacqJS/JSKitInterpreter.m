@@ -93,7 +93,7 @@ extern void LQJSKitWrappers_initStatics();
         _globalCtx = JSGlobalContextCreate(_globalClassRef);
         
         JSObjectRef globalObject = JSContextGetGlobalObject(_globalCtx);
-        NSAssert(JSObjectSetPrivate(globalObject, self), @"Obj-C bridge as private data");
+        JSObjectSetPrivate(globalObject, self);
 
 
         myPackages = [[NSMutableDictionary dictionary] retain];
@@ -527,6 +527,8 @@ extern void LQJSKitWrappers_initStatics();
 
     if ( !jsValue || !ctx) return nil;
     
+    //NSLog(@"converting JS value %p, ctx %p, type %d", jsValue, ctx, (int)JSValueGetType(ctx, jsValue));
+    
     switch (JSValueGetType(ctx,jsValue)) {
 	case kJSTypeUndefined:
 	    return nil;
@@ -553,8 +555,12 @@ extern void LQJSKitWrappers_initStatics();
                 
                 // get the context's Array constructor - make sure it is a constructor!
                 JSValueRef arrayConstructor = JSObjectGetProperty(ctx, JSContextGetGlobalObject(ctx), s_ArrayStr, NULL);
+                
+                //NSLog(@" ... object %p has length, array constr is %p", jsValue, arrayConstructor);
+
                 if (JSValueIsObject(ctx, arrayConstructor) &&
                     JSObjectIsConstructor(ctx, (JSObjectRef)arrayConstructor)) {
+                    //NSLog(@"  .. is instance: %d", JSValueIsInstanceOfConstructor(ctx, (JSObjectRef)jsValue, (JSObjectRef)arrayConstructor, NULL));
                     if (JSValueIsInstanceOfConstructor(ctx, (JSObjectRef)jsValue, (JSObjectRef)arrayConstructor, NULL)) {
                         // finally!  We know that it is an array!
                         return [[[LQJSKitArrayWrapper alloc] initWithObject: (JSObjectRef) jsValue context: ctx] autorelease];
