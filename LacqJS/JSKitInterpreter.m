@@ -542,7 +542,8 @@ extern void LQJSKitWrappers_initStatics();
 	    }
     case kJSTypeNumber:
         return [NSNumber numberWithDouble:JSValueToNumber(ctx,jsValue, NULL)];
-    case kJSTypeString: {
+    case kJSTypeString:
+    case kJSTypeSymbol: {
         JSStringRef resultStringJS = JSValueToStringCopy(ctx, jsValue, NULL);
         NSString *retval = [[LQJSKitStringWrapper alloc] initWithJSString: resultStringJS];
         JSStringRelease(resultStringJS);

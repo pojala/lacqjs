@@ -71,6 +71,15 @@ JSValueRef LQJSKitNSObjectConvertToTypeCallback(JSContextRef ctx, JSObjectRef ob
             } else {
                 return NULL;
             }
+    case kJSTypeSymbol: {
+        NSString *str = [nsobj jskitAsString];
+        if ( !str) str = [[nsobj class] description];
+        JSStringRef string = JSStringCreateWithCFString((CFStringRef)str);
+        JSValueRef retval = JSValueMakeSymbol(ctx, string);
+        JSStringRelease(string);
+        return retval;
+
+    }
 	case kJSTypeString: {
         //NSLog(@"convert to js string: %p / %@, strlen %ld", nsobj, [nsobj class], (long)[[nsobj jskitAsString] length]);
         NSString *str = [nsobj jskitAsString];
